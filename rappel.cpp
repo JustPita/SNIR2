@@ -3,7 +3,7 @@
 // SNIR2
 // 08/09/2022
 //~~~~
-#include <iostream> // bibliothèque de gestion des E/S
+#include <iostream> // bibliothï¿½que de gestion des E/S
 #include <conio.h> // gestion de la console (ici _getch())
 #include <string>
 using namespace std;
@@ -30,28 +30,15 @@ int main()
 	tab[7] = tmp;
 	cout <<tab[3]<<endl<<tab[7]<<endl << endl;
 
-	int max, min,tmpmax,tmpmin;
-	max = tab[0];
-	min = tab[0];
-	for (int i = 0; i < 100; i++)
+	int max = tab[0];
+	int min = tab[0];
+	for (int i = 1; i < 100; i++)
 	{
-		if (max > tab[i])
-		{
-			tmpmax = tab[i];
-			tab[i] = tab[i+1];
-			tab[i+1] = tmpmax;
-		}
-		else if (max < tab[i])
+		if (tab[i] > max)
 		{
 			max = tab[i];
 		}
-		else if (min < tab[i])
-		{
-			tmpmin = tab[i];
-			tab[i] = tab[i + 1];
-			tab[i + 1] = tmpmin;
-		}
-		else if (min > tab[i])
+		if (tab[i] < min)
 		{
 			min = tab[i];
 		}
