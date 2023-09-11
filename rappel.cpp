@@ -13,13 +13,13 @@ int main()
 {
 	int a = 0;
 	double tab[100];
-	for (int i = 0; i < 99; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		a += 2;
 		tab[i] = a;
 	}
 	cout << "contenu du tableau " << endl;
-	for (unsigned i = 0; i < 99; i++)
+	for (unsigned i = 0; i < 100; i++)
 	{
 		cout << tab[i] << endl;
 	}
@@ -32,7 +32,7 @@ int main()
 
 	int max = tab[0];
 	int min = tab[0];
-	for (int i = 1; i < 99; i++)
+	for (int i = 1; i < 100; i++)
 	{
 		if (tab[i] > max)
 		{
@@ -43,16 +43,17 @@ int main()
 			min = tab[i];
 		}
 	}
-	cout <<max<<endl<<min<< endl;
+	cout <<"max:"<<max<<endl<<"min:"<<min<< endl;
+	cout <<endl<<endl;
 
 
-	for (int i=10;i<99;i++)
+	for (int i=10; i<99; i++)
 	{
 		tab[i]=tab[i+1];
 	}
-	tab[100]=0;
+	tab[99]=0;
 
-	for (unsigned i = 0; i < 98; i++)
+	for (unsigned i = 0; i < 99; i++)
 	{
 		cout << tab[i] << endl;
 	}
