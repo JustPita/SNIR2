@@ -53,7 +53,7 @@ int main()
 	}
 	tab[99]=0;
 
-	for (unsigned i = 0; i < 99; i++)
+	for (unsigned i = 0; i < 100; i++)
 	{
 		cout << tab[i] << endl;
 	}
