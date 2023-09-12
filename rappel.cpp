@@ -12,19 +12,34 @@ using namespace std;
 int main()
 {
 	int a = 0;
+	int taille=100;
 	double tab[100];
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < taille; i++)
 	{
-		a += 2;
-		tab[i] = a;
+		tab[i] = (i+1)*2;
 	}
 	cout << "contenu du tableau " << endl;
-	for (unsigned i = 0; i < 100; i++)
+
+void permut(double & x, double &y)
+{
+	double tmp =x;
+	x=y;
+	y=tmp;
+}	
+void affichage(double *tab,int taille)
+{
+	for (unsigned i=0; i<taille;i++)
 	{
-		cout << tab[i] << endl;
+		cout<<tab[i]<<"\t";
+		if ((i+1)%10==0)
 	}
+}
+
 	cout << endl << endl;
-	
+	void permut
+	{
+
+	}
 	int tmp = tab[2];
 	tab[2] = tab[6];
 	tab[6] = tmp;
