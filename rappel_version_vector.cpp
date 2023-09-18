@@ -12,12 +12,12 @@ using namespace std;
 using std::cout;
 
 
-void affichage(vector<double> tab)
+void affichage(const vector<double> & tab)
 {
     for (unsigned i =0;i<tab.size();i++)
     {
-        cout<<tab[i]<<endl;
-    }
+        cout<<tab[i]<<"\t";
+        if((i+1)%10==0) cout <<endl;    }
 }
 
 void permut(double &x,double &y)
@@ -29,12 +29,10 @@ void permut(double &x,double &y)
 
 int main()
 {
-    unsigned i;
-    double taille =100;
-    vector<double>tab(taille);
-    for (unsigned i=0;i<tab.size();i++)
+    vector<double>tab;
+    for (unsigned i=0;i<100;i++)
     {
-        tab[i]=(i+1)*2;
+        tab.pushback
     }
     affichage(tab);
     permut(tab[2],tab[6]);
