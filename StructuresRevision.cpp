@@ -41,8 +41,8 @@ void affichage(const Produit &instance)
 // FONCTION PRINCIPALE
 int main()
 {
-    saisie();
-    affichage(Personne[1]);
+    Produit test1 = saisie();
+    affichage(test1);
 
     cin.get();
     cin.ignore();
