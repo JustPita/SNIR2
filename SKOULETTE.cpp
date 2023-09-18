@@ -8,11 +8,12 @@
 #include <string>
 #include <vector>
 using namespace std;
+//AUTRES
 
+//FONCTION PRINCIPALE
 int main()
 {
     
-
 
     cin.get();
     cin.ignore();
