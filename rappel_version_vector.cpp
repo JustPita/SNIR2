@@ -32,7 +32,7 @@ int main()
     vector<double>tab;
     for (unsigned i=0;i<100;i++)
     {
-        tab.pushback
+        tab.push_back(2*i+2);
     }
     affichage(tab);
     permut(tab[2],tab[6]);
