@@ -50,6 +50,15 @@ int main(){
     Point p1(2.3,6.4);
     cout<<"NB en memoire: "<< Point::getNbPoints()<<endl;
 
+    Point *p2=new Point(3.2,4.34);
+    cout<<"NB en memoire: "<< Point::getNbPoints()<<endl;
+
+    cout<<"Delete point p2"<<endl;
+    delete p2;
+
+    cout<<"NB en memoire: "<< Point::getNbPoints()<<endl;
+
+
     cin.get();cin.ignore();
     return EXIT_SUCCESS;
 }
