@@ -1,4 +1,4 @@
-//***************** Point3D.h ************************
+// point3Dcolor.h
 #ifndef POINT3DColor
 #define POINT3DColor
 
@@ -8,14 +8,13 @@
 class Point3DColor : public Point3D
 {
 public:
-	void changeColor(unsigned long NewColor);
+    void changeColor(unsigned long NewColor);
 
-	void affiche(void);
-	Point3DColor(float xi=1 , float yi=2 , float zi=5 , int epaisseur=3,unsigned long color=128);
-	
+    void affiche(void);
+    Point3DColor(float xi=1 , float yi=2 , float zi=5 , int epaisseur=3,unsigned long color=128);
 
 private:
-	unsigned long color;
+    unsigned long color;
 };
 
 #endif

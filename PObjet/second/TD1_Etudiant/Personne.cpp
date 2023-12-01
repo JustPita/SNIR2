@@ -1,17 +1,15 @@
-#include <string>
-#ifndef PERSONNE
-#define PERSONNE
+#include <iostream>
+#include "Personne.h"
 
+Personne::Personne(std::string leNom,std::string lePrenom){
+    nom=leNom;
+    prenom=lePrenom;
+}
 
-class Personne{
-public:
-    std::string nom;
-    std::string prenom;
+std::string Personne::getNom(){
+    std::cout<<"Nom = "<<nom<<std::endl;
+}
 
-private:
-    std::string Personne();
-    std::string getNom;
-    std::string getPrenom;
-};
-
-#endif
+std::string Personne::getPrenom(){
+    std::cout<<"Prenom = "<<prenom<<std::endl;
+}
