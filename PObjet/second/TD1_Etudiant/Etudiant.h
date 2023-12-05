@@ -10,12 +10,12 @@ public:
     std::string getClasse();
     void setMoyenne(double laMoyenne);
     double getMoyenne();
-    int getNombreEtudiants();
+    static int getNombreEtudiants();
 
 private:
     std::string classe;
     double moyenne;
-    int nombreEtudiants;
+    static int nombreEtudiants;
 };
 
 #endif
