@@ -7,20 +7,20 @@
 #include <conio.h>  // gestion de la console (ici _getch())
 #include <string>
 #include <vector>
+#include "Etudiant.h"
 using namespace std;
 //AUTRES
 
 //FONCTION PRINCIPALE
 int main() {
     vector<Etudiant> etudiants = {
-        // Ajoutez vos étudiants ici
         // {"Nom", "Prenom", {note1, note2, note3, ...}},
     };
     double sommeMoyennes = 0.0;
-    for (const auto& etudiant : etudiants) {
-        double moyenne = calculerMoyenne(etudiant.notes);
+    for (vector<Etudiant>::int i = etudiants.begin(); i != etudiants.end(); ++i) {
+        double moyenne = calculerMoyenne(it->notes);
         sommeMoyennes += moyenne;
-        cout << "Nom: " << etudiant.nom << ", Prenom: " << etudiant.prenom
+        cout << "Nom: " << it->nom << ", Prenom: " << it->prenom
              << ", Moyenne: " << moyenne << endl;
     }
 
