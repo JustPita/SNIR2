@@ -15,7 +15,7 @@ int main()
 {
     
 
-    cin.get();
-    cin.ignore();
+    std::cin.get();
+    std::cin.ignore();
     return EXIT_SUCCESS;
 }
