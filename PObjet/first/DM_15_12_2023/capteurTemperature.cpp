@@ -10,5 +10,7 @@
 CapteurTemperature::CapteurTemperature(std::string noSerie, double min, double max) : Capteur("TEMP", noSerie), temperatureMinAutorisee(min), temperatureMaxAutorisee(max){}
 double CapteurTemperature::getTemperature(){
     srand(time(0));
-    return temperatureMinAutorisee + static_cast<double>(rand()) / (static_cast<double>(RAND_MAX/(temperatureMaxAutorisee-temperatureMinAutorisee)));
+    double range = temperatureMaxAutorisee - temperatureMinAutorisee;
+    double div = RAND_MAX / range;
+    return temperatureMinAutorisee + (rand() / div);
 }
